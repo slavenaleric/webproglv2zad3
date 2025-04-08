@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vremenski podaci i statistika za različite lokacije.">
+    <link rel="stylesheet" href="style.css">
+    <title>Vremenski Podaci</title>
+</head>
+<header>
+    <h1>Dobrodošli na moju web stranicu!</h1>
+</header>
+
+<nav aria-labelledby="primarna-navigacija">
+    <h2 id="primarna-navigacija"></h2>
+    <ul>
+        <li><a href="/slike">Galerija</a></li>
+        <li><a href="grafikon.html">Grafikon</a></li>
+        
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Vremenski Podaci</h2>
+		<table>
+			<tr>
+				<th>Temperature (°C)</th>
+				<th>Humidity (%)</th>
+				<th>Wind Speed (km/h)</th>
+				<th>Precipitation (%)</th>
+				<th>Cloud Cover</th>
+				<th>Atmospheric Pressure</th>
+				<th>UV Index</th>
+				<th>Season</th>
+				<th>Visibility (km)</th>
+				<th>Location</th>
+				<th>Weather Type</th>
+			</tr>
+			<tr><td>23</td><td>69</td><td>9.5</td><td>10</td><td>clear</td><td>1012.91</td><td>9</td><td>Spring</td><td>8.5</td><td>inland</td><td>Sunny</td></tr>
+			<tr><td>29</td><td>82</td><td>18</td><td>78</td><td>overcast</td><td>991.54</td><td>3</td><td>Spring</td><td>4</td><td>inland</td><td>Rainy</td></tr>
+			<tr><td>36</td><td>48</td><td>3.5</td><td>11</td><td>partly cloudy</td><td>1024.92</td><td>10</td><td>Autumn</td><td>5.5</td><td>mountain</td><td>Sunny</td></tr>
+			<tr><td>32</td><td>35</td><td>5.5</td><td>9</td><td>partly cloudy</td><td>1010.24</td><td>6</td><td>Summer</td><td>9</td><td>coastal</td><td>Sunny</td></tr>
+			<tr><td>23</td><td>23</td><td>3.5</td><td>8</td><td>clear</td><td>1027.69</td><td>5</td><td>Spring</td><td>6.5</td><td>mountain</td><td>Sunny</td></tr>
+			<tr><td>30</td><td>57</td><td>12.5</td><td>33</td><td>overcast</td><td>1002.2</td><td>1</td><td>Autumn</td><td>7</td><td>inland</td><td>Cloudy</td></tr>
+
+		</table>
+    </section>
+
+    <aside>
+        <picture>
+            <!-- Slika za veće ekrane (desktop) -->
+            <source media="(min-width: 768px)" srcset="https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs=">
+            <!-- Slika za manje ekrane (mobile) -->
+            <img src="https://play-lh.googleusercontent.com/EKqL51kqaqzSLOW7UBthAtK3C1FLk76wzNVN_6dMidtUbKBHtw3CT3zSVvvXWt87jTBa=s256-rw" alt="Tema slike">
+        </picture>
+
+    </aside>
+</main>
+    <footer>
+        <p>&copy; Slaven Alerić</p>
+    </footer>

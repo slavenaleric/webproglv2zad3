@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style_slike.css">
+    <title>Galerija</title>
+</head>
+<body>
+
+<header>
+    <h1>Galerija</h1>
+</header>
+
+<nav aria-labelledby="primarna-navigacija">
+    <h2 id="primarna-navigacija"></h2>
+    <ul>
+        <li><a href="/index.html">Index</a></li>
+        <li><a href="/grafikon.html">Grafikon</a></li>
+    </ul>
+</nav>
+
+<section class="galerija">
+
+    <% images.forEach(image => { %>
+        <figure class="galerija_slika">
+            <a href="#<%= image.id %>" title="<%= image.title %>">
+                <img src="<%= image.url %>" alt="<%= image.title %>">
+            </a>
+            <figcaption><%= image.title %></figcaption>
+        </figure>
+
+        <div id="<%= image.id %>" class="zoomed">
+            <a href="#" class="close">X</a>
+            <img src="<%= image.url %>" alt="Uvećana <%= image.title %>">
+        </div>
+    <% }) %>
+
+</section>
+
+<footer>
+    <p>&copy; Slaven Alerić</p>
+</footer>
+
+</body>
+</html>
